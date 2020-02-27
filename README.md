@@ -1,4 +1,4 @@
-# LAB 4 - 
+# LAB 4 - !
 # REACT TODOS
 - `npm start` from client directory 
 - Create a form with a button
@@ -21,7 +21,7 @@
 # AWS Setup
 https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html
 
-- Create an ec2 instance
+- Create an ec2 instance (Launch Instance)
 - Pick free tier -> ubuntu
 - Download pem file
 - `sudo chmod 400 path/to/pem`
