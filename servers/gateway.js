@@ -14,7 +14,7 @@ app.all("/api/*", (req, res) => {
   // service1
   console.log(req.path)
   apiProxy.web(req, res, {
-    target: 'http://localhost:3001',
+    target: 'http://localhost:5000',
   });
 });
 
