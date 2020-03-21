@@ -10,10 +10,14 @@ apiProxy.on('error', (err, req, res) => {
   res.status(500).send('Proxy Error');
 });
 
-app.all("/api/*", (req, res) => {
+app.all("/api*", (req, res) => {
   // service1
-  console.log(req.path)
-  apiProxy.web(req, res, {
+  console.log(req.path);
+  let newReq = req;
+  newReq.url = newReq.url.replace('/api', '');
+  newReq.originalUrl = newReq.originalUrl.replace('/api', '');
+  newReq.path = newReq.path.replace('/api', '');
+  apiProxy.web(newReq, res, {
     target: 'http://localhost',
   });
 });
