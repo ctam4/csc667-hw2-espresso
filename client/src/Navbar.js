@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Navbar.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const NavigationBar = () => {
     return (
@@ -21,4 +21,4 @@ const NavigationBar = () => {
     );
 }
 
-export default NavigationBar
+export default NavigationBar;

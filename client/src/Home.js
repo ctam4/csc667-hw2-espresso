@@ -6,8 +6,6 @@ class Landing extends Component {
         return (
             <div className='back-page'>
                 <div className="container1">
-
-
                     <h1 className='welcome'>Welcome Home</h1>
                     <div className="container">
                         <img
@@ -16,10 +14,7 @@ class Landing extends Component {
                         />
                     </div>
                 </div>
-
-
             </div>
-
         );
     }
 }
