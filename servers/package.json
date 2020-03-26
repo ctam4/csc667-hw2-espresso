@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node fileServer.js & node gateway.js",
-    "start-watch": "nodemon --watch ../client/build/ fileServer.js & nodemon --watch . gateway.js"
+    "start-watch": "nodemon --watch ../client/build/ fileServer.js & nodemon --watch gateway.js gateway.js"
   },
   "author": "",
   "license": "ISC"
