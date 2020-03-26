@@ -12,12 +12,12 @@ apiProxy.on('error', (err, req, res) => {
 
 app.all("/api*", (req, res) => {
   // service1
-  console.log(req.path);
-  let newReq = req;
-  newReq.url = newReq.url.replace('/api', '');
-  newReq.originalUrl = newReq.originalUrl.replace('/api', '');
-  newReq.path = newReq.path.replace('/api', '');
-  apiProxy.web(newReq, res, {
+  req.url = req.url.replace('/api', '');
+  req.originalUrl = req.originalUrl.replace('/api', '');
+  if (req.path) {
+    req.path = req.path.replace('/api', '');
+  }
+  apiProxy.web(req, res, {
     target: 'http://localhost',
   });
 });
