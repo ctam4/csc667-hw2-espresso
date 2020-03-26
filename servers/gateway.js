@@ -18,14 +18,14 @@ app.all("/api*", (req, res) => {
     req.path = req.path.replace('/api', '');
   }
   apiProxy.web(req, res, {
-    target: 'http://localhost',
+    target: 'http://0.0.0.0',
   });
 });
 
 app.all("*", (req, res) => {
   // front end server / react
   apiProxy.web(req, res, {
-    target: 'http://localhost:4000',
+    target: 'http://0.0.0.0:4000',
   });
 });
 
