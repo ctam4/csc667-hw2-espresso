@@ -1,4 +1,4 @@
- import React from "react";
+ import React from 'react';
  import './jason1819.css';
 
 const getTeamName = (e) => {
@@ -6,7 +6,7 @@ const getTeamName = (e) => {
   const city = document.getElementById('input-field');
   const result = document.getElementById('output-field');
   result.innerHTML = 'Loading....';
-  const url= "/api/jason1819/team_name?city=" + city.value;
+  const url= '/api/jason1819/team_name?city=' + city.value;
   fetch(url)
     .then(res => res.json())
     .then(data => {
