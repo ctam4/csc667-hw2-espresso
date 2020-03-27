@@ -39,6 +39,14 @@ const weather = () => {
             placeholder="city"
           />
         </div>
+        <div className="box">
+          <img
+            src="https://media.giphy.com/media/ulAjqv4pOfPOg/giphy.gif"
+            alt="logo"
+            className="image_logo"
+          />
+        </div>
+
         <div className="city">
           <button className="button-text" type="submit">
             Submit
