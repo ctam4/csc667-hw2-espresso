@@ -1,4 +1,5 @@
 import React from 'react';
+import './ctam4.css';
 
 const getCryptoPrice = (e) => {
   e.preventDefault();
