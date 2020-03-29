@@ -2,7 +2,7 @@
 version: "3"
 
 services:
-  node-client:
+  hw2-client:
     image: "node:12.15.0"
     user: "node"
     environment:
@@ -12,15 +12,21 @@ services:
       - .:/home/node/app/
       - ./node_modules/:/home/node/app/node_modules/:ro
     command: "npm run build"
-  node-servers:
+  hw2-servers:
     image: "node:12.15.0"
     ports:
       - "4000:4000"
       - "5000:5000"
     environment:
       NODE_ENV: "development"
+      API_HOST: "hw1"
     working_dir: /home/node/app/servers/
     volumes:
       - .:/home/node/app/:ro
       - ./node_modules/:/home/node/app/node_modules/:ro
     command: "npm run start-watch"
+
+networks:
+  default:
+    external:
+      name: csc667
