@@ -5,11 +5,14 @@
   "main": "api.js",
   "dependencies": {
     "express": "^4.17.1",
-    "http-proxy": "^1.18.0"
+    "express-http-proxy": "^1.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "scripts": {
-    "start": "node fileServer.js & node gateway.js"
+    "start": "node fileServer.js & node gateway.js",
+    "start-watch": "nodemon --watch ../client/build/ fileServer.js & nodemon --watch gateway.js gateway.js"
   },
   "author": "",
   "license": "ISC"

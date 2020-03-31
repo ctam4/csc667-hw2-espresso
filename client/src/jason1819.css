@@ -1,0 +1,28 @@
+
+  .header {
+    padding: 0px;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px 8px;
+   }
+
+   .output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
