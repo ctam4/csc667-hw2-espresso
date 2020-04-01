@@ -6,7 +6,7 @@ const NavigationBar = () => {
     return (
       <div className="navigation-bar">
         <Link to="/">
-          <h1>CSS 667 HW2</h1>
+          <h1>CSC 667 HW2</h1>
         </Link>
         <Link to="/bdiaz666">
           <div className="about">bdiaz666</div>
